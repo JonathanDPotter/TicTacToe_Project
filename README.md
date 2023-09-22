@@ -5,3 +5,5 @@ This is my version of the TrueCoders tic tac toe project.
 ## Technologies used
 
 I built this app using on HTML, CSS, and JavaScript. I used a combination of flexbox and grid to position elements on the screen.
+
+You can view a live deployment [here](https://jonathandpotter.github.io/TicTacToe_Project/).
