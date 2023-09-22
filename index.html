@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-  <title>tic tac toe</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>tic tac toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <section class="scoreboxes">
+      <div class="scorebox">
+        <p id="player-one-name-display"></p>
+        <p id="player-one-score-display"></p>
+      </div>
+      <div class="scorebox">
+        <p id="player-two-name-display"></p>
+        <p id="player-two-score-display"></p>
+      </div>
+    </section>
+    <section id="game-board"></section>
+  </body>
+  <dialog id="start-dialog">
+    <form method="dialog">
+      <fieldset>
+        <label for="player-one-name">Player one name:</label
+        ><input type="text" name="player-one-name" id="player-one-name" />
+      </fieldset>
+      <fieldset>
+        <label for="player-two-name">Player two name:</label
+        ><input type="text" name="player-two-name" id="player-two-name" />
+      </fieldset>
+      <button type="submit" id="start-button">Start</button>
+    </form>
+  </dialog>
+  <dialog id="win-dialog">
+    <form method="dialog">
+      <p id="win-message"></p>
+      <button type="submit" id="continue-button">Continue</button>
+    </form>
+  </dialog>
 </html>
